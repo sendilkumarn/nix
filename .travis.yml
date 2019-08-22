@@ -5,6 +5,10 @@ dist: trusty
 language: rust
 services: docker
 
+branches:
+  only:
+  - local-test
+
 env:
   global:
     - CRATE_NAME=nix
